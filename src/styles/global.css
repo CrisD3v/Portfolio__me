@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg: #ffffff;
+    --color-text: #0f172a;
+  }
+
+  html.dark {
+    --color-bg: #020618;
+    --color-text: #f8fafc;
+  }
+  
+  body {
+    @apply bg-background text-foreground transition-colors duration-300 ease-in-out font-sans;
+  }
+}

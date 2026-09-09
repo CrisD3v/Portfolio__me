@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import anime from 'animejs';
 import profileImg from '../assets/profile_teal.jpg';
-import { Mail } from 'lucide-react';
+import { Mail, ArrowRight, ArrowDown } from 'lucide-react';
 
 export function Hero() {
   const { t } = useTranslation();
@@ -53,8 +53,8 @@ export function Hero() {
           </p>
 
           <div className="flex flex-wrap items-center gap-4 mb-12">
-            <a href="#about" className="px-6 py-3 bg-slate-900/80 text-white font-medium text-sm rounded-lg border border-slate-700 hover:border-teal-400/50 hover:bg-slate-800 transition-all flex items-center gap-2">
-              {t('hero.buttons.about')} →
+            <a href="#about" className="group px-6 py-3 bg-slate-900/80 text-white font-medium text-sm rounded-lg border border-slate-700 hover:border-teal-400/50 hover:bg-slate-800 transition-all flex items-center gap-2">
+              {t('hero.buttons.about')} <ArrowRight size={16} className="text-teal-400 group-hover:translate-x-1 transition-transform" />
             </a>
             <a href="#projects" className="px-6 py-3 bg-transparent text-slate-300 font-medium text-sm rounded-lg border border-slate-800 hover:border-slate-600 hover:text-white transition-all">
               {t('hero.buttons.projects')}
@@ -106,7 +106,7 @@ export function Hero() {
 
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50 animate-bounce">
         <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-slate-400">{t('hero.explore_more')}</span>
-        <span className="text-slate-400">↓</span>
+        <ArrowDown size={16} className="text-slate-400" />
       </div>
     </section>
   );

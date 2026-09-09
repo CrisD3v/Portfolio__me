@@ -9,10 +9,9 @@ export function Hero() {
   const titleRef = useRef<HTMLHeadingElement>(null);
   const textRef = useRef<HTMLParagraphElement>(null);
   const imgRef = useRef<HTMLDivElement>(null);
-  const bgTextRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (titleRef.current && textRef.current && imgRef.current && bgTextRef.current) {
+    if (titleRef.current && textRef.current && imgRef.current) {
       anime({
         targets: [titleRef.current.children, textRef.current, imgRef.current],
         translateY: [30, 0],
@@ -21,12 +20,6 @@ export function Hero() {
         duration: 1000,
         easing: 'easeOutQuart'
       });
-      anime({
-        targets: bgTextRef.current,
-        opacity: [0, 0.03],
-        scale: [0.95, 1],
-        duration: 2000,
-        easing: 'easeOutQuart'
       });
     }
   }, []);

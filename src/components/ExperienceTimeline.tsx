@@ -30,13 +30,8 @@ export function ExperienceTimeline() {
   return (
     <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto" id="experience">
       <div className="mb-20">
-        <div className="inline-block px-3 py-1 mb-6 text-xs font-semibold tracking-wider text-teal-400 uppercase bg-teal-500/10 border border-teal-500/20 rounded-full">
-          + Experience
-        </div>
-        <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
-          {t('experience.title').split(' ').map((word, i, arr) => (
-            i === arr.length - 1 ? <span key={i} className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-600">{word}</span> : <span key={i}>{word} </span>
-          ))}
+        <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight">
+          {t('experience.title')}
         </h2>
         <p className="max-w-2xl text-lg text-slate-400">
           {t('experience.subtitle')}
@@ -45,7 +40,7 @@ export function ExperienceTimeline() {
       
       <div className="relative" ref={timelineRef}>
         {/* Central Vertical Line for Desktop, Left Line for Mobile */}
-        <div className="absolute left-6 md:left-1/2 md:-ml-px top-0 bottom-0 w-[2px] bg-teal-900/50"></div>
+        <div className="absolute left-6 md:left-1/2 md:-ml-px top-0 bottom-0 w-px bg-slate-800"></div>
 
         <div className="flex flex-col gap-12">
           {roles.map((item, index) => {
@@ -58,20 +53,19 @@ export function ExperienceTimeline() {
                 
                 {/* Center dot + Horizontal Connector */}
                 <div className="absolute left-6 md:left-1/2 flex items-center justify-center -translate-x-1/2 z-10 w-4 h-4">
-                  <div className="w-3 h-3 bg-teal-400 rounded-full shadow-[0_0_10px_rgba(45,212,191,0.8)] relative z-20"></div>
+                  <div className="w-2.5 h-2.5 bg-teal-500 rounded-full relative z-20"></div>
                 </div>
                 
                 {/* Horizontal line connecting dot to card (Desktop only) */}
-                <div className={`hidden md:block absolute top-1/2 -translate-y-1/2 h-[2px] bg-teal-900/50 w-12 z-0 ${isLeft ? 'left-1/2 -ml-12' : 'right-1/2 -mr-12'}`}></div>
+                <div className={`hidden md:block absolute top-1/2 -translate-y-1/2 h-px bg-slate-800 w-12 z-0 ${isLeft ? 'left-1/2 -ml-12' : 'right-1/2 -mr-12'}`}></div>
                 
                 {/* Content Card container */}
                 <div className={`w-full md:w-1/2 pl-16 md:pl-0 flex ${isLeft ? 'md:pr-12 md:justify-end' : 'md:pl-12 md:justify-start'}`}>
                   
-                  <div className="w-full max-w-xl p-6 md:p-8 rounded-2xl bg-[#0a1128]/80 border border-teal-900/40 hover:border-teal-500/50 transition-colors shadow-2xl relative group overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-teal-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  <div className="w-full max-w-xl p-6 md:p-8 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-slate-700 transition-colors relative">
                     
                     <div className="relative z-10 flex flex-col md:flex-row md:items-center gap-3 mb-5">
-                      <span className="inline-block px-4 py-1.5 text-xs font-bold text-teal-400 bg-teal-900/30 rounded-full w-fit">
+                      <span className="inline-block px-3 py-1 text-xs font-semibold text-teal-400 bg-teal-900/20 rounded-full w-fit">
                         {item.date}
                       </span>
                       <span className="text-sm font-medium text-slate-400">

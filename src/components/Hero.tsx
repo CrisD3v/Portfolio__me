@@ -34,17 +34,6 @@ export function Hero() {
   return (
     <section className="relative pt-32 pb-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto min-h-screen flex items-center justify-center">
       
-      {/* Huge Background Text Wrapper to prevent horizontal scroll */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-        <div 
-          ref={bgTextRef}
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15rem] md:text-[25rem] font-black text-white whitespace-nowrap opacity-0 tracking-tighter"
-          style={{ WebkitTextStroke: '2px rgba(255,255,255,0.1)', color: 'transparent' }}
-        >
-          CRISTIAN
-        </div>
-      </div>
-
       <div className="flex flex-col md:flex-row items-center justify-between w-full gap-12 relative z-10">
         
         {/* Text Content */}
@@ -55,7 +44,7 @@ export function Hero() {
             </p>
             <h1 className="text-6xl sm:text-7xl lg:text-8xl font-black tracking-tight mb-6 text-white leading-none opacity-0">
               Cristian <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-600 drop-shadow-[0_0_15px_rgba(20,184,166,0.4)]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-600">
                 Londoño
               </span>
             </h1>
@@ -93,9 +82,8 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Image Section */}
+        {/* Glowing Aura Background */}
         <div className="flex-shrink-0 relative w-full max-w-sm md:w-[400px]" ref={imgRef}>
-          {/* Glowing Aura Background */}
           <div className="absolute -inset-4 bg-gradient-to-tr from-teal-400 via-emerald-500 to-teal-700 rounded-3xl blur-[80px] opacity-40 animate-pulse"></div>
           
           <div className="relative rounded-[2rem] overflow-hidden shadow-2xl aspect-[4/5] bg-slate-900">
@@ -124,7 +112,7 @@ export function Hero() {
 
       </div>
 
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50 animate-bounce">
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
         <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-slate-400">{t('hero.explore_more')}</span>
         <span className="text-slate-400">↓</span>
       </div>

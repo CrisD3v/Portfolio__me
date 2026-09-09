@@ -20,7 +20,6 @@ export function Hero() {
         duration: 1000,
         easing: 'easeOutQuart'
       });
-      });
     }
   }, []);
 

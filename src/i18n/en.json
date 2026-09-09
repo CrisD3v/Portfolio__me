@@ -10,7 +10,7 @@
     "pre_title": "HI, I'M",
     "name": "Cristian Londoño",
     "title": "Backend Senior Developer",
-    "description": "Backend development and AWS Serverless architectures specialist. I transform complex requirements into scalable and secure platforms using Node.js and TypeScript.",
+    "description": "Backend development and AWS Serverless architectures specialist. I build scalable and secure platforms using Node.js and TypeScript.",
     "buttons": {
       "about": "About me",
       "projects": "View projects"
@@ -21,8 +21,8 @@
     "contact": "Contact"
   },
   "experience": {
-    "title": "Experience that builds judgment.",
-    "subtitle": "Each stage has helped me strengthen technical, analytical and problem-solving skills in real-world environments.",
+    "title": "Experience",
+    "subtitle": "Professional background and roles.",
     "roles": [
       {
         "role": "Senior Backend Developer | AWS Serverless",
@@ -39,8 +39,8 @@
     ]
   },
   "projects": {
-    "title": "Projects that turn ideas into products.",
-    "subtitle": "These projects reflect how I apply full stack development, data, design and product thinking to solve real problems.",
+    "title": "Selected Work",
+    "subtitle": "Recent projects and technical implementations.",
     "buttons": {
       "repository": "View repository",
       "live": "Live preview"

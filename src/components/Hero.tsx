@@ -53,10 +53,10 @@ export function Hero() {
           </p>
 
           <div className="flex flex-wrap items-center gap-4 mb-12">
-            <a href="#about" className="px-6 py-3 bg-white text-black font-semibold text-sm rounded-full hover:scale-105 transition-transform flex items-center gap-2">
+            <a href="#about" className="px-6 py-3 bg-slate-900/80 text-white font-medium text-sm rounded-lg border border-slate-700 hover:border-teal-400/50 hover:bg-slate-800 transition-all flex items-center gap-2">
               {t('hero.buttons.about')} →
             </a>
-            <a href="#projects" className="px-6 py-3 bg-transparent text-white font-semibold text-sm rounded-full border border-slate-700 hover:bg-slate-800 transition-colors">
+            <a href="#projects" className="px-6 py-3 bg-transparent text-slate-300 font-medium text-sm rounded-lg border border-slate-800 hover:border-slate-600 hover:text-white transition-all">
               {t('hero.buttons.projects')}
             </a>
           </div>
@@ -104,7 +104,7 @@ export function Hero() {
 
       </div>
 
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50 animate-bounce">
         <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-slate-400">{t('hero.explore_more')}</span>
         <span className="text-slate-400">↓</span>
       </div>

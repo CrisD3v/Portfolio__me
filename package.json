@@ -12,9 +12,27 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^7.3.2"
+    "@astrojs/react": "^6.0.5",
+    "@types/animejs": "^3.1.13",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "animejs": "^3.2.2",
+    "astro": "^7.3.2",
+    "embla-carousel-autoplay": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
+    "i18next": "^26.4.2",
+    "lucide-react": "^1.43.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-i18next": "^17.0.13"
   },
   "allowScripts": {
     "esbuild": true
+  },
+  "devDependencies": {
+    "@astrojs/tailwind": "^6.0.2",
+    "autoprefixer": "^10.5.5",
+    "postcss": "^8.5.28",
+    "tailwindcss": "^3.4.19"
   }
 }

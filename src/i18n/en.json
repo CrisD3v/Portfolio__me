@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "pre_title": "HI, I'M",
+    "name": "Cristian Londoño",
+    "title": "Backend Senior Developer",
+    "description": "Backend development and AWS Serverless architectures specialist. I transform complex requirements into scalable and secure platforms using Node.js and TypeScript.",
+    "buttons": {
+      "about": "About me",
+      "projects": "View projects"
+    },
+    "badge": "FROM IN:",
+    "explore_more": "Explore More",
+    "github": "GitHub",
+    "contact": "Contact"
+  },
+  "experience": {
+    "title": "Experience that builds judgment.",
+    "subtitle": "Each stage has helped me strengthen technical, analytical and problem-solving skills in real-world environments.",
+    "roles": [
+      {
+        "role": "Senior Backend Developer | AWS Serverless",
+        "company": "Nodd - Music Distribution & Digital Wallet",
+        "date": "Nov 2025 - Ago 2026",
+        "description": "Led the design and implementation of backend services for financial products using AWS Lambda, API Gateway, and DynamoDB. Developed event-driven architectures for digital wallet features. Integrated financial APIs focusing on reliability and security standards compliance."
+      },
+      {
+        "role": "Full Stack Developer (Specialized in Backend)",
+        "company": "Talento Consultores",
+        "date": "Dec 2022 - Nov 2025",
+        "description": "Built full stack applications with Node.js, TypeScript, and React. Developed REST APIs with NestJS and Express.js. Implemented automated testing with Jest and Cypress. Optimized performance and refactored legacy systems for scalability."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects that turn ideas into products.",
+    "subtitle": "These projects reflect how I apply full stack development, data, design and product thinking to solve real problems.",
+    "buttons": {
+      "repository": "View repository",
+      "live": "Live preview"
+    },
+    "labels": {
+      "highlights": "Highlights",
+      "stack": "Stack"
+    },
+    "items": {
+      "krescendo": {
+        "title": "KRESCENDO",
+        "category": "ENTERPRISE PLATFORM",
+        "date": "2025",
+        "description": "Scalable music distribution platform oriented to events, guaranteeing performance, security, and maintainable code at scale.",
+        "highlights": [
+          "Developed serverless architecture using AWS Lambda and API Gateway",
+          "Implemented secure authentication and MFA with AWS Cognito",
+          "Designed event-driven workflows with Amazon EventBridge",
+          "Managed data effectively with DynamoDB"
+        ]
+      },
+      "noddpay": {
+        "title": "NODDPAY",
+        "category": "FINANCIAL TECHNOLOGY",
+        "date": "2025",
+        "description": "Secure and scalable digital wallet for money management and movement: serverless architecture and infrastructure ready for millions of users.",
+        "highlights": [
+          "Built a serverless architecture optimized for high-volume transactions",
+          "Integrated multiple financial APIs with strict regulatory compliance",
+          "Ensured reliability and security for financial data handling"
+        ]
+      },
+      "sistegra": {
+        "title": "SISTEGRA",
+        "category": "SAAS PLATFORM",
+        "date": "2023",
+        "description": "Cloud SaaS platform for integral Occupational Health and Safety (OHS) management, centralizing occupational risk management and regulatory compliance.",
+        "highlights": [
+          "Developed over 20 configurable modules for OHS tracking",
+          "Incorporated predictive models for real-time preventive actions",
+          "Built robust backend with PHP, Laravel and MySQL",
+          "Created reactive UI with React and Inertia.js"
+        ]
+      }
+    }
+  },
+  "footer": {
+    "made_with": "Minimalist Portfolio built with Astro, React, and Tailwind CSS."
+  }
+}

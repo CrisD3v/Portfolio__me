@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "pre_title": "HOLA, SOY",
+    "name": "Cristian Londoño",
+    "title": "Desarrollador Backend Senior",
+    "description": "Especialista en desarrollo Backend y arquitecturas Serverless con AWS. Transformo requerimientos complejos en plataformas escalables y seguras usando Node.js y TypeScript.",
+    "buttons": {
+      "about": "Sobre mí",
+      "projects": "Ver proyectos"
+    },
+    "badge": "DESDE:",
+    "explore_more": "Explorar Más",
+    "github": "GitHub",
+    "contact": "Contacto"
+  },
+  "experience": {
+    "title": "Experiencia que construye criterio.",
+    "subtitle": "Cada etapa me ha ayudado a fortalecer mis habilidades técnicas, analíticas y de resolución de problemas en entornos reales.",
+    "roles": [
+      {
+        "role": "Desarrollador Backend Senior | AWS Serverless",
+        "company": "Nodd - Music Distribution & Digital Wallet",
+        "date": "Nov 2025 - Ago 2026",
+        "description": "Lideré el diseño e implementación de servicios backend para productos financieros utilizando AWS Lambda, API Gateway y DynamoDB. Desarrollé arquitecturas event-driven para funcionalidades de billetera digital. Integré APIs financieras con enfoque en confiabilidad y cumplimiento de estándares de seguridad."
+      },
+      {
+        "role": "Desarrollador Full Stack (Especializado en Backend)",
+        "company": "Talento Consultores",
+        "date": "Dic 2022 - Nov 2025",
+        "description": "Construí aplicaciones full stack con Node.js, TypeScript y React. Desarrollé APIs REST con NestJS y Express.js. Implementé testing automatizado con Jest y Cypress. Optimicé el rendimiento y refactoricé sistemas legacy mejorando su escalabilidad."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos que convierten ideas en productos.",
+    "subtitle": "Estos proyectos reflejan cómo aplico el desarrollo full stack, datos, diseño y visión de producto para resolver problemas reales.",
+    "buttons": {
+      "repository": "Ver repositorio",
+      "live": "Ver proyecto"
+    },
+    "labels": {
+      "highlights": "Destacados",
+      "stack": "Tecnologías"
+    },
+    "items": {
+      "krescendo": {
+        "title": "KRESCENDO",
+        "category": "PLATAFORMA EMPRESARIAL",
+        "date": "2026",
+        "description": "Plataforma escalable de distribución musical orientada a eventos, garantizando rendimiento, seguridad y código mantenible a escala.",
+        "highlights": [
+          "Desarrollo de arquitectura serverless usando AWS Lambda y API Gateway",
+          "Implementación de autenticación segura y MFA con AWS Cognito",
+          "Diseño de flujos event-driven con Amazon EventBridge",
+          "Gestión efectiva de datos con DynamoDB"
+        ]
+      },
+      "noddpay": {
+        "title": "NODDPAY",
+        "category": "TECNOLOGÍA FINANCIERA",
+        "date": "2026",
+        "description": "Billetera digital segura y escalable para la gestión y movimiento de dinero: arquitectura serverless e infraestructura preparada para millones de usuarios.",
+        "highlights": [
+          "Creación de arquitectura serverless optimizada para alto volumen de transacciones",
+          "Integración de múltiples APIs financieras con estricto cumplimiento regulatorio",
+          "Garantía de confiabilidad y seguridad para el manejo de datos financieros"
+        ]
+      },
+      "sistegra": {
+        "title": "SISTEGRA",
+        "category": "PLATAFORMA SAAS",
+        "date": "2025",
+        "description": "Plataforma SaaS en la nube para la gestión integral de Seguridad y Salud en el Trabajo (SG-SST), centralizando la gestión de riesgos laborales y normativas.",
+        "highlights": [
+          "Desarrollo de más de 20 módulos configurables para seguimiento SG-SST",
+          "Incorporación de modelos predictivos para acciones preventivas en tiempo real",
+          "Construcción de backend robusto con PHP, Laravel y MySQL",
+          "Creación de UI reactiva con React e Inertia.js"
+        ]
+      }
+    }
+  },
+  "footer": {
+    "made_with": "Portfolio minimalista creado con Astro, React y Tailwind CSS."
+  }
+}

@@ -1,46 +1,33 @@
-# Astro Starter Kit: Basics
+<div align="center">
+  <img src="./src/assets/profile_teal.jpg" alt="Cristian Londoño" width="150" style="border-radius: 50%;">
+  
+  # Cristian Londoño - Personal Portfolio
+  
+  **Senior Backend & Full Stack Developer** | **AWS Serverless Specialist**
+  
+  *Read this in other languages: [English](README.md) • [Español](README-es.md)*
+</div>
 
-```sh
-pnpm create astro@latest -- --template basics
-```
+---
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Welcome to the source code of my personal portfolio! This project showcases my experience, skills, and selected projects as a developer specializing in scalable backend architectures and modern web applications.
 
-## 🚀 Project Structure
+### 🚀 Tech Stack
 
-Inside of your Astro project, you'll see the following folders and files:
+This portfolio is built with modern web technologies focusing on performance and clean architecture:
+- **[Astro](https://astro.build/)**: For incredibly fast static site generation.
+- **[React](https://reactjs.org/)**: For interactive UI components.
+- **[Tailwind CSS](https://tailwindcss.com/)**: For rapid, minimalist, and responsive styling.
+- **[Anime.js](https://animejs.com/) & Embla Carousel**: For smooth, engaging animations and interactive swipeable carousels.
+- **[i18next](https://www.i18next.com/)**: For seamless English/Spanish bilingual support.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+### ✨ Features
+- **Dark Mode Design**: Featuring a sleek `#020618` deep-dark background with vibrant teal and gradient accents.
+- **Bilingual**: Fully integrated i18n support (English/Spanish).
+- **Interactive UI**: Draggable project carousels, responsive professional timelines, and dynamic hover animations (Card Fan).
+- **SEO & Performance Optimized**: Leverages Astro's zero-JS-by-default architecture for lightning-fast loading speeds.
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+<div align="center">
+  <p>Built with ☕ and code by Cristian Londoño.</p>
+</div>

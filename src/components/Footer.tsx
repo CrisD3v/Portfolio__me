@@ -15,7 +15,7 @@ export function Footer() {
             href="https://github.com/CrisD3v" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="p-2 text-slate-400 hover:text-teal-500 transition-colors"
+            className="p-2 text-slate-500 dark:text-slate-400 hover:text-teal-600 dark:hover:text-teal-500 transition-colors"
             aria-label="GitHub"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -26,7 +26,7 @@ export function Footer() {
             href="https://www.linkedin.com/in/crisdeveg" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="p-2 text-slate-400 hover:text-teal-500 transition-colors"
+            className="p-2 text-slate-500 dark:text-slate-400 hover:text-teal-600 dark:hover:text-teal-500 transition-colors"
             aria-label="LinkedIn"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

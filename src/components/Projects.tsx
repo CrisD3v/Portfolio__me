@@ -50,19 +50,19 @@ export function Projects() {
     <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" id="projects">
       <div className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-8 max-w-6xl mx-auto">
         <div className="flex-1">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white mb-6 tracking-tight">
             {t('projects.title')}
           </h2>
         </div>
         <div className="flex flex-col items-start md:items-end md:pb-2">
-          <p className="max-w-md text-lg text-slate-400 mb-6 md:text-right">
+          <p className="max-w-md text-lg text-slate-600 dark:text-slate-400 mb-6 md:text-right">
             {t('projects.subtitle')}
           </p>
           <div className="flex gap-4">
-            <button onClick={scrollPrev} className="p-3 rounded-full bg-slate-800 border border-slate-700 text-white hover:bg-teal-600 transition-colors" aria-label="Previous project">
+            <button onClick={scrollPrev} className="p-3 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-white hover:bg-teal-50 dark:hover:bg-teal-600 transition-colors" aria-label="Previous project">
               <ChevronLeft size={20} />
             </button>
-            <button onClick={scrollNext} className="p-3 rounded-full bg-slate-800 border border-slate-700 text-white hover:bg-teal-600 transition-colors" aria-label="Next project">
+            <button onClick={scrollNext} className="p-3 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-white hover:bg-teal-50 dark:hover:bg-teal-600 transition-colors" aria-label="Next project">
               <ChevronRight size={20} />
             </button>
           </div>
@@ -76,10 +76,10 @@ export function Projects() {
 
             return (
               <div key={project.id} className="flex-[0_0_100%] min-w-0 px-4 md:px-8">
-                <div className="flex flex-col lg:flex-row gap-0 bg-slate-900/40 rounded-3xl overflow-hidden border border-slate-800 shadow-xl group">
+                <div className="flex flex-col lg:flex-row gap-0 bg-white dark:bg-slate-900/40 rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-xl group">
                   
                   {/* Image Section */}
-                  <div className={`lg:w-5/12 bg-slate-900 p-8 flex items-center justify-center relative overflow-hidden`}>
+                  <div className={`lg:w-5/12 bg-slate-50 dark:bg-slate-900 p-8 flex items-center justify-center relative overflow-hidden`}>
                     
                     <div className="relative w-full flex items-center justify-center" style={{ perspective: '1000px' }}>
                       {project.images.slice().reverse().map((img, reversedIndex) => {
@@ -92,7 +92,7 @@ export function Projects() {
                             key={originalIndex}
                             src={img.src} 
                             alt={t(`projects.items.${project.id}.title`)} 
-                            className={`w-full h-auto rounded-xl shadow-xl transition-all duration-700 ease-out border border-slate-800 
+                            className={`w-full h-auto rounded-xl shadow-xl shadow-slate-200/50 dark:shadow-none transition-all duration-700 ease-out border border-slate-200 dark:border-slate-800 
                               ${isFront ? 
                                 `relative z-20 ${hasMultiple ? 'group-hover:-translate-y-4 group-hover:-translate-x-4 group-hover:-rotate-2 group-hover:scale-105' : 'group-hover:scale-105'}` : 
                                 'absolute top-0 left-0 z-10 translate-y-3 translate-x-3 rotate-3 scale-95 opacity-60 group-hover:translate-y-8 group-hover:translate-x-8 group-hover:rotate-6 group-hover:opacity-100 group-hover:scale-100'
@@ -107,19 +107,19 @@ export function Projects() {
                   {/* Details Section */}
                   <div className={`lg:w-7/12 p-8 lg:p-12 flex flex-col justify-center`}>
                     <div className="flex flex-wrap items-center gap-3 mb-6">
-                      <span className="px-3 py-1 text-xs font-semibold text-slate-300 bg-slate-800/80 rounded-full w-fit">
+                      <span className="px-3 py-1 text-xs font-semibold text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-slate-800/80 rounded-full w-fit">
                         {t(`projects.items.${project.id}.category`)}
                       </span>
-                      <span className="px-3 py-1 text-xs font-semibold text-slate-400">
+                      <span className="px-3 py-1 text-xs font-semibold text-slate-500 dark:text-slate-400">
                         {t(`projects.items.${project.id}.date`)}
                       </span>
                     </div>
 
-                    <h3 className="text-3xl font-extrabold text-white mb-2">
+                    <h3 className="text-3xl font-extrabold text-slate-900 dark:text-white mb-2">
                       {t(`projects.items.${project.id}.title`)}
                     </h3>
                     
-                    <p className="text-slate-400 mb-8 leading-relaxed">
+                    <p className="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
                       {t(`projects.items.${project.id}.description`)}
                     </p>
 
@@ -127,8 +127,8 @@ export function Projects() {
                       <h4 className="text-xs font-bold text-slate-500 tracking-widest uppercase mb-4">{t('projects.labels.highlights')}</h4>
                       <ul className="space-y-3">
                         {highlights && highlights.map((highlight, idx) => (
-                          <li key={idx} className="flex items-start text-sm text-slate-300">
-                            <span className="mr-3 text-teal-500 mt-0.5 flex-shrink-0 text-lg leading-none">•</span>
+                          <li key={idx} className="flex items-start text-sm text-slate-600 dark:text-slate-300">
+                            <span className="mr-3 text-teal-600 dark:text-teal-500 mt-0.5 flex-shrink-0 text-lg leading-none">•</span>
                             <span>{highlight}</span>
                           </li>
                         ))}
@@ -139,7 +139,7 @@ export function Projects() {
                       <h4 className="text-xs font-bold text-slate-500 tracking-widest uppercase mb-4">{t('projects.labels.stack')}</h4>
                       <div className="flex flex-wrap gap-2">
                         {project.tags.map(tag => (
-                          <span key={tag} className="px-3 py-1.5 bg-slate-800/50 text-slate-300 text-xs font-medium rounded-full border border-slate-700">
+                          <span key={tag} className="px-3 py-1.5 bg-slate-100 dark:bg-slate-800/50 text-slate-700 dark:text-slate-300 text-xs font-medium rounded-full border border-slate-200 dark:border-slate-700">
                             {tag}
                           </span>
                         ))}
@@ -149,13 +149,13 @@ export function Projects() {
                     <div className="flex flex-wrap gap-4 mt-auto">
                       <a 
                         href="#" 
-                        className={`flex items-center gap-2 px-6 py-3 bg-slate-900/80 text-white font-medium text-sm rounded-lg border border-slate-700 transition-all ${project.disableRepo ? 'opacity-50 cursor-not-allowed pointer-events-none' : 'hover:border-teal-400/50 hover:bg-slate-800'}`}
+                        className={`flex items-center gap-2 px-6 py-3 bg-white/80 dark:bg-slate-900/80 text-slate-900 dark:text-white font-medium text-sm rounded-lg border border-slate-200 dark:border-slate-700 transition-all ${project.disableRepo ? 'opacity-50 cursor-not-allowed pointer-events-none' : 'hover:border-teal-500/50 hover:bg-slate-50 dark:hover:bg-slate-800'}`}
                         aria-disabled={project.disableRepo}
                       >
                         {t('projects.buttons.repository')}
                         <ExternalLink size={16} className="text-slate-400" />
                       </a>
-                      <a href={project.link || '#'} target="_blank" rel="noreferrer" className="flex items-center gap-2 px-6 py-3 bg-transparent text-slate-300 font-medium text-sm rounded-lg border border-slate-800 hover:border-slate-600 hover:text-white transition-all">
+                      <a href={project.link || '#'} target="_blank" rel="noreferrer" className="flex items-center gap-2 px-6 py-3 bg-transparent text-slate-700 dark:text-slate-300 font-medium text-sm rounded-lg border border-slate-300 dark:border-slate-800 hover:border-slate-400 dark:hover:border-slate-600 hover:text-slate-900 dark:hover:text-white transition-all">
                         {t('projects.buttons.live')}
                       </a>
                     </div>

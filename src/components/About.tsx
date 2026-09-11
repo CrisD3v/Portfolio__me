@@ -50,17 +50,17 @@ export function About() {
         <div className="mb-16 opacity-0">
           <div className="flex items-center gap-4 mb-4">
             <div className="h-px w-12 bg-teal-500"></div>
-            <h2 className="text-sm font-bold text-teal-400 tracking-widest uppercase">
+            <h2 className="text-sm font-bold text-teal-600 dark:text-teal-400 tracking-widest uppercase">
               {t('about.title')}
             </h2>
           </div>
-          <h3 className="text-4xl md:text-5xl font-black text-white tracking-tight">
+          <h3 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white tracking-tight">
             {t('about.subtitle')}
           </h3>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center opacity-0">
-          <div className="space-y-6 text-slate-400 text-lg leading-relaxed">
+          <div className="space-y-6 text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
             <p>
               {t('about.description_p1')}
             </p>
@@ -70,7 +70,7 @@ export function About() {
             <div className="pt-8">
               <button 
                 onClick={() => window.dispatchEvent(new CustomEvent('open-contact'))} 
-                className="group px-6 py-3 bg-teal-500/10 text-teal-400 font-medium text-sm rounded-lg border border-teal-500/20 hover:border-teal-400/50 hover:bg-teal-500/20 transition-all flex items-center gap-2"
+                className="group px-6 py-3 bg-teal-50 dark:bg-teal-500/10 text-teal-700 dark:text-teal-400 font-medium text-sm rounded-lg border border-teal-200 dark:border-teal-500/20 hover:border-teal-300 dark:hover:border-teal-400/50 hover:bg-teal-100 dark:hover:bg-teal-500/20 transition-all flex items-center gap-2"
               >
                 {t('contact.title')} 
                 <span className="group-hover:translate-x-1 transition-transform"><ArrowRight size={16} /></span>

@@ -72,30 +72,30 @@ export function Contact() {
     <div className="fixed inset-0 z-[100] flex items-center justify-center px-4 sm:px-6">
       {/* Backdrop */}
       <div 
-        className={`absolute inset-0 bg-slate-950/60 backdrop-blur-md transition-opacity duration-300 ${showBackdrop ? 'opacity-100' : 'opacity-0'}`} 
+        className={`absolute inset-0 bg-white/80 dark:bg-slate-950/60 backdrop-blur-md transition-opacity duration-300 ${showBackdrop ? 'opacity-100' : 'opacity-0'}`} 
         onClick={handleClose}
       ></div>
       
       {/* Modal */}
       <div 
-        className={`relative w-full max-w-4xl bg-slate-900 border border-slate-800/80 rounded-2xl shadow-2xl overflow-hidden transition-all duration-400 ease-out ${showModal ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-[0.97] translate-y-8'}`}
+        className={`relative w-full max-w-4xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800/80 rounded-2xl shadow-2xl overflow-hidden transition-all duration-400 ease-out ${showModal ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-[0.97] translate-y-8'}`}
       >
         
         <button 
           onClick={handleClose}
-          className="absolute top-4 right-4 text-slate-500 hover:text-white transition-colors p-2 z-20 bg-slate-800/30 hover:bg-slate-800 rounded-full"
+          className="absolute top-4 right-4 text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors p-2 z-20 bg-slate-100 dark:bg-slate-800/30 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-full"
         >
           <X size={20} />
         </button>
 
         <div className="grid grid-cols-1 md:grid-cols-5 h-full">
           {/* Left Panel */}
-          <div className="md:col-span-2 bg-slate-950/50 p-8 md:p-10 flex flex-col border-b md:border-b-0 md:border-r border-slate-800/50">
+          <div className="md:col-span-2 bg-slate-50 dark:bg-slate-950/50 p-8 md:p-10 flex flex-col border-b md:border-b-0 md:border-r border-slate-200 dark:border-slate-800/50">
             <div className="mb-auto">
-              <h2 className="text-3xl font-black text-white tracking-tight mb-4">
+              <h2 className="text-3xl font-black text-slate-900 dark:text-white tracking-tight mb-4">
                 {t('contact.title')}
               </h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-8">
+              <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-8">
                 {t('contact.subtitle')}
               </p>
             </div>
@@ -107,9 +107,9 @@ export function Contact() {
                   href={social.href} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 text-sm font-medium text-slate-400 hover:text-teal-400 transition-colors group"
+                  className="flex items-center gap-4 text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-teal-600 dark:hover:text-teal-400 transition-colors group"
                 >
-                  <span className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 group-hover:border-teal-500/30 group-hover:bg-teal-500/5 transition-colors">
+                  <span className="p-2.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 group-hover:border-teal-400 dark:group-hover:border-teal-500/30 group-hover:bg-teal-50 dark:group-hover:bg-teal-500/5 transition-colors">
                     {social.icon}
                   </span>
                   {social.name}
@@ -119,38 +119,38 @@ export function Contact() {
           </div>
 
           {/* Right Panel - Form */}
-          <div className="md:col-span-3 p-8 md:p-10 bg-slate-900">
+          <div className="md:col-span-3 p-8 md:p-10 bg-white dark:bg-slate-900">
             <form onSubmit={handleSubmit} className="space-y-8 flex flex-col h-full">
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="space-y-2 text-left">
-                  <label htmlFor="name" className="text-xs font-semibold text-slate-400 uppercase tracking-wider pl-1">{t('contact.form.name')}</label>
+                  <label htmlFor="name" className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider pl-1">{t('contact.form.name')}</label>
                   <input 
                     type="text" 
                     id="name" 
                     required
-                    className="w-full bg-slate-950/40 border border-slate-800/50 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-teal-500/40 focus:ring-1 focus:ring-teal-500/40 transition-all placeholder:text-slate-600 shadow-inner"
+                    className="w-full bg-slate-50 dark:bg-slate-950/40 border border-slate-200 dark:border-slate-800/50 rounded-xl px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-teal-500/40 focus:ring-1 focus:ring-teal-500/40 transition-all placeholder:text-slate-400 dark:placeholder:text-slate-600 shadow-inner"
                     placeholder={t('contact.form.name_placeholder')}
                   />
                 </div>
                 <div className="space-y-2 text-left">
-                  <label htmlFor="email" className="text-xs font-semibold text-slate-400 uppercase tracking-wider pl-1">{t('contact.form.email')}</label>
+                  <label htmlFor="email" className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider pl-1">{t('contact.form.email')}</label>
                   <input 
                     type="email" 
                     id="email" 
                     required
-                    className="w-full bg-slate-950/40 border border-slate-800/50 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-teal-500/40 focus:ring-1 focus:ring-teal-500/40 transition-all placeholder:text-slate-600 shadow-inner"
+                    className="w-full bg-slate-50 dark:bg-slate-950/40 border border-slate-200 dark:border-slate-800/50 rounded-xl px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-teal-500/40 focus:ring-1 focus:ring-teal-500/40 transition-all placeholder:text-slate-400 dark:placeholder:text-slate-600 shadow-inner"
                     placeholder={t('contact.form.email_placeholder')}
                   />
                 </div>
               </div>
               
               <div className="space-y-2 text-left flex-1 flex flex-col pt-2">
-                <label htmlFor="message" className="text-xs font-semibold text-slate-400 uppercase tracking-wider pl-1">{t('contact.form.message')}</label>
+                <label htmlFor="message" className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider pl-1">{t('contact.form.message')}</label>
                 <textarea 
                   id="message" 
                   required
-                  className="w-full flex-1 bg-slate-950/40 border border-slate-800/50 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-teal-500/40 focus:ring-1 focus:ring-teal-500/40 transition-all placeholder:text-slate-600 resize-none min-h-[120px] shadow-inner"
+                  className="w-full flex-1 bg-slate-50 dark:bg-slate-950/40 border border-slate-200 dark:border-slate-800/50 rounded-xl px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-teal-500/40 focus:ring-1 focus:ring-teal-500/40 transition-all placeholder:text-slate-400 dark:placeholder:text-slate-600 resize-none min-h-[120px] shadow-inner"
                   placeholder={t('contact.form.message_placeholder')}
                 ></textarea>
               </div>
@@ -159,7 +159,7 @@ export function Contact() {
                 <button 
                   type="submit" 
                   disabled={formState !== 'idle'}
-                  className="w-full sm:w-auto bg-white text-slate-900 hover:bg-slate-200 font-bold py-3 px-8 rounded-lg transition-colors flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed sm:ml-auto"
+                  className="w-full sm:w-auto bg-slate-900 dark:bg-white text-white dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-slate-200 font-bold py-3 px-8 rounded-lg transition-colors flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed sm:ml-auto"
                 >
                   {formState === 'idle' && <>{t('contact.form.send')} <Send size={16} /></>}
                   {formState === 'sending' && <span className="animate-pulse">{t('contact.form.sending')}</span>}

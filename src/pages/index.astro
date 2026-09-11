@@ -2,8 +2,10 @@
 import Layout from '../layouts/Layout.astro';
 import { NavbarWithTheme } from '../components/Navbar';
 import { Hero } from '../components/Hero';
+import { About } from '../components/About';
 import { ExperienceTimeline } from '../components/ExperienceTimeline';
 import { Projects } from '../components/Projects';
+import { Contact } from '../components/Contact';
 import { Footer } from '../components/Footer';
 ---
 
@@ -11,8 +13,10 @@ import { Footer } from '../components/Footer';
   <NavbarWithTheme client:load />
   <main>
     <Hero client:load />
+    <About client:load />
     <ExperienceTimeline client:load />
     <Projects client:load />
+    <Contact client:load />
   </main>
   <Footer client:load />
 </Layout>

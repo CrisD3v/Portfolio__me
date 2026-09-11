@@ -68,9 +68,9 @@ export function Hero() {
               </svg> {t('hero.github')}
             </a>
             <span className="w-1 h-1 rounded-full bg-slate-600"></span>
-            <a href="#contact" className="flex items-center gap-2 hover:text-white transition-colors">
+            <button onClick={() => window.dispatchEvent(new CustomEvent('open-contact'))} className="flex items-center gap-2 hover:text-white transition-colors cursor-pointer">
               <Mail size={16} /> {t('hero.contact')}
-            </a>
+            </button>
           </div>
         </div>
 

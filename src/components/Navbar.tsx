@@ -31,7 +31,7 @@ export function Navbar() {
             <a href="#about" className="hover:text-white transition-colors">{t('nav.about')}</a>
             <a href="#experience" className="hover:text-white transition-colors">{t('nav.experience')}</a>
             <a href="#projects" className="hover:text-white transition-colors">{t('nav.projects')}</a>
-            <a href="#contact" className="hover:text-white transition-colors">{t('nav.contact')}</a>
+            <button onClick={() => window.dispatchEvent(new CustomEvent('open-contact'))} className="hover:text-white transition-colors cursor-pointer">{t('nav.contact')}</button>
           </div>
 
           <div className="flex items-center gap-2 lg:gap-4">

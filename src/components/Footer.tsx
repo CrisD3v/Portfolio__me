@@ -23,7 +23,7 @@ export function Footer() {
             </svg>
           </a>
           <a 
-            href="https://www.linkedin.com/in/crisdeveg" 
+            href="https://www.linkedin.com/in/crisdeveg/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="p-2 text-slate-500 dark:text-slate-400 hover:text-teal-600 dark:hover:text-teal-500 transition-colors"

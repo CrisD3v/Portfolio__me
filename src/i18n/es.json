@@ -20,6 +20,34 @@
     "github": "GitHub",
     "contact": "Contacto"
   },
+  "about": {
+    "title": "Sobre mí",
+    "subtitle": "Conoce un poco más de mi trayectoria y enfoque profesional.",
+    "description_p1": "Soy un Desarrollador Backend Senior especializado en arquitecturas Serverless con AWS, Node.js y TypeScript. Me apasiona construir sistemas altamente escalables, seguros y eficientes que resuelvan problemas complejos de negocio.",
+    "description_p2": "A lo largo de mi carrera, he liderado el diseño de soluciones para la industria financiera y SaaS, enfocándome en el rendimiento, la disponibilidad (event-driven) y las buenas prácticas de desarrollo.",
+    "skills_title": "Mi enfoque técnico"
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "¿Tienes un proyecto en mente? Hablemos.",
+    "form": {
+      "name": "Nombre",
+      "name_placeholder": "Ej. Juan Pérez",
+      "email": "Correo Electrónico",
+      "email_placeholder": "juan@ejemplo.com",
+      "message": "Mensaje",
+      "message_placeholder": "Escribe tu mensaje aquí...",
+      "send": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado con éxito!",
+      "error": "Hubo un error al enviar el mensaje. Inténtalo de nuevo."
+    },
+    "social": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "email": "Correo Directo"
+    }
+  },
   "experience": {
     "title": "Experiencia",
     "subtitle": "Trayectoria profesional y roles desempeñados.",

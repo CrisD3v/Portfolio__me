@@ -20,6 +20,34 @@
     "github": "GitHub",
     "contact": "Contact"
   },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Get to know more about my background and professional approach.",
+    "description_p1": "I am a Senior Backend Developer specializing in AWS Serverless architectures, Node.js, and TypeScript. I am passionate about building highly scalable, secure, and efficient systems that solve complex business problems.",
+    "description_p2": "Throughout my career, I have led the design of solutions for the financial and SaaS industries, focusing on performance, availability (event-driven workflows), and software development best practices.",
+    "skills_title": "My Technical Focus"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have a project in mind? Let's talk.",
+    "form": {
+      "name": "Name",
+      "name_placeholder": "e.g. John Doe",
+      "email": "Email",
+      "email_placeholder": "john@example.com",
+      "message": "Message",
+      "message_placeholder": "Write your message here...",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "There was an error sending the message. Please try again."
+    },
+    "social": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "email": "Direct Email"
+    }
+  },
   "experience": {
     "title": "Experience",
     "subtitle": "Professional background and roles.",
